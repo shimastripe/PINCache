@@ -22,8 +22,8 @@ test:
 	CODE_SIGNING_REQUIRED=NO | xcpretty
 
 carthage:
-	carthage update --no-use-binaries --no-build
-	carthage build --no-skip-current
+	carthage update --no-use-binaries --no-build --use-xcframeworks
+	carthage build --no-skip-current --use-xcframeworks
 
 spm:
 # For now just check whether we can assemble it
